@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: hsl(0, 69%, 14%);
+    color: #333;
+}
+
+header {
+    background: #5a3e56a7;
+    color: #ffffff27;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.subheading {
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a hover {
+    color: #FFD700;
+}
+
+#hero {
+    text-align: center;
+    padding: 2rem 0;
+    background: 
+    url('hero-image.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    position: relative;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.25rem;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(123, 121, 122, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #a50034f1;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #a555005c;
+}
+
+ul {
+    list-style: square;
+    margin-left: 20px;
+}
+
+footer {
+    background: #a5550049;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+social -media a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-media a hover {
+    color: #FFD700;
+}
+
+button {
+    background-color: #a5550049;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: backdround-color 0.3s;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #FFD700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1 rem;
+    }
+}
