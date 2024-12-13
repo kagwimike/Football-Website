@@ -49,6 +49,63 @@ nav ul li a hover {
     color: #FFD700;
 }
 
+/* Slider container stylying */
+
+.slider {
+    width: 100%;
+    max-width: 800%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Styling the figure for the sliding effect  */
+ .slider figure {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 400%;
+    animation: slide 12s infinite;
+ }
+
+ /* Individual slide styling */
+ .slider .slide {
+    width: 100%;
+    flex-shrink: 0;
+    text-align: center;
+ }
+
+ /* Image styling */
+ .slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+ }
+
+ /* Sliding animation */
+ @keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    25%{
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200);
+    }
+
+    75% {
+        transform: translateX(-300);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+ }
+ 
+
 #hero {
     text-align: center;
     padding: 2rem 0;
@@ -70,7 +127,7 @@ nav ul li a hover {
 section {
     padding: 2rem;
     margin: 1rem 0;
-    background: #ffffff;
+    background: #ffffff94;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(123, 121, 122, 0.1);
 }
